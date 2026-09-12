@@ -1,0 +1,6 @@
+{
+  "name": "DigitalBoostLab",
+  "description": "Websites, brands, and Android apps engineered for businesses that want to grow.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

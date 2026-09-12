@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Ensure window.fetch has both getter and setter for external tooling / iframe script compatibility
+      (function() {
+        try {
+          var originalFetch = typeof window.fetch === 'function' ? window.fetch.bind(window) : window.fetch;
+          var _fetch = originalFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return _fetch;
+            },
+            set: function(fn) {
+              _fetch = fn;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          // Ignore if environment prevents redefining
+        }
+      })();
+    </script>
+    <title>DigitalBoostLab — Websites, Brands & Android Apps, Engineered</title>
+    <meta name="description" content="DigitalBoostLab designs and builds websites, digital brands, and Android apps for businesses that want to grow. Explore our services, work, and pricing." />
+    <meta property="og:title" content="DigitalBoostLab — Websites, Brands & Android Apps, Engineered" />
+    <meta property="og:description" content="DigitalBoostLab designs and builds websites, digital brands, and Android apps for businesses that want to grow. Explore our services, work, and pricing." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
