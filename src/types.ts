@@ -1,4 +1,4 @@
-export type ServiceCategory = 'web' | 'branding' | 'app' | 'seo';
+export type ServiceCategory = 'web' | 'branding' | 'app';
 
 export interface ServiceItem {
   id: string;

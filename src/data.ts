@@ -48,22 +48,6 @@ export const SERVICES: ServiceItem[] = [
     ],
     techStack: ['Android SDK', 'Jetpack Compose', 'Kotlin', 'React Native', 'SQLite / Room'],
     timeline: '6–10 weeks'
-  },
-  {
-    id: 'seo',
-    code: 'SEO',
-    title: 'Growth & SEO',
-    shortDesc: 'On-page SEO, analytics setup, and ongoing content support so the site and app you launch keep earning traffic after handoff.',
-    detailedDesc: 'Launching is just step one. We configure privacy-conscious analytics, search console verification, automated sitemaps, localized schemas, and conversion tracking funnels to measure real business ROI.',
-    deliverables: [
-      'Technical SEO Audit & Keyword Architecture',
-      'Google Search Console & Analytics 4 Tagging',
-      'Conversion Event Tracking & Funnel Setup',
-      'Performance Budgeting & Ongoing Speed Audits',
-      'Post-Launch Content Strategy Briefs'
-    ],
-    techStack: ['GA4', 'Google Tag Manager', 'Search Console', 'Schema.org', 'Lighthouse CI'],
-    timeline: 'Ongoing / Included'
   }
 ];
 

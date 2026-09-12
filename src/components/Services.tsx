@@ -19,7 +19,7 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
               CAPABILITIES
             </span>
             <h2 className="text-[28px] sm:text-[36px] lg:text-[40px] font-bold text-[#0E1626] leading-tight max-w-[22ch]">
-              Four disciplines, one build process.
+              Three disciplines, one build process.
             </h2>
           </div>
           <p className="max-w-[42ch] text-[15px] sm:text-[15.5px] leading-[1.6] text-[#5B6478]">
@@ -27,8 +27,8 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
           </p>
         </div>
 
-        {/* 4 Columns Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[1px] bg-[rgba(14,22,38,0.12)] border border-[rgba(14,22,38,0.12)]">
+        {/* 3 Columns Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[1px] bg-[rgba(14,22,38,0.12)] border border-[rgba(14,22,38,0.12)]">
           {SERVICES.map((service) => (
             <div
               key={service.id}
